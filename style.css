@@ -1,0 +1,19 @@
+:root{
+    --cor_botao_clicado:rgb(99, 255, 99);
+    --cor_botao_n_clic:rgb(81, 81, 252);
+    --cor_fundo:black;
+    --cor_titulo:rgb(255, 151, 169);
+}
+body{
+    background-color:var(--cor_fundo);
+}
+h1{
+    color:cor_titulo;
+}
+.principal{
+    border:solid white 2px;
+    text-align:center;
+    height:200px;
+    width:200px;
+    border-radius:10%;
+}
