@@ -1,19 +1,46 @@
 :root{
     --cor_botao_clicado:rgb(99, 255, 99);
     --cor_botao_n_clic:rgb(81, 81, 252);
-    --cor_fundo:black;
-    --cor_titulo:rgb(255, 151, 169);
+    --cor_fundo:rgb(253, 183, 255);
+    --cor_titulo:rgb(179, 0, 140);
 }
 body{
     background-color:var(--cor_fundo);
 }
 h1{
-    color:cor_titulo;
+    color:var(--cor_titulo);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .principal{
-    border:solid white 2px;
+    border:solid rgb(175, 0, 161) 6px;
     text-align:center;
-    height:200px;
-    width:200px;
-    border-radius:10%;
+    height:300px;
+    width:300px;
+    border-radius:8%;
+}
+button{
+    border-bottom: solid white 3px;
+    border-radius: 10%;
+    color: rgb(0, 0, 0);
+    height: 10%;
+    width: 30%;
+}
+@media only screen and (max-width: 820px) {/*para deixar responsivo*/
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;/*indica tamanho das colunas*/
+        grid-template-rows: auto auto 200px;/*indica tamanho das linhas*/
+    }
+}
+main{
+    text-align: center;
+    margin-left: 42%;
+}
+.capa{
+    width: 35%;
+    border-radius: 10%;
 }
