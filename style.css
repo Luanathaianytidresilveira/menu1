@@ -5,7 +5,14 @@
     --cor_titulo:rgb(179, 0, 140);
 }
 body{
+    display: grid;/*grid*/
     background-color:var(--cor_fundo);
+    grid-template-areas: 
+    "cab"
+    "pri"
+    "rod";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
 }
 h1{
     color:var(--cor_titulo);
@@ -29,18 +36,43 @@ button{
 @media only screen and (max-width: 820px) {/*para deixar responsivo*/
     body{
         grid-template-areas: 
-        "cabe"
-        "prin"
-        "roda";
+        "cab"
+        "pri"
+        "rod";
         grid-template-columns: 1fr;/*indica tamanho das colunas*/
-        grid-template-rows: auto auto 200px;/*indica tamanho das linhas*/
+        grid-template-rows:200px;/*indica tamanho das linhas*/
     }
 }
 main{
     text-align: center;
     margin-left: 42%;
 }
-.capa{
-    width: 35%;
-    border-radius: 10%;
+header{
+    grid-area: cab;
+    text-align: left;
+}
+footer{
+    grid-area: rod;
+    text-align: center;
+}
+.um{
+    color: var(--cor_botao_n_clicado);
+    color: var(--cor_botao_n_clicado);
+    border-radius: 15%;
+    margin-top: 30%;
+    margin: 15px;
+}
+.dois{
+    color: var(--cor_botao_n_clicado);
+    color: var(--cor_botao_n_clicado);
+    border-radius: 15%;
+    margin-top: 30%;
+    margin: 15px;
+}
+.tres{
+    color: var(--cor_botao_n_clicado);
+    color: var(--cor_botao_n_clicado);
+    border-radius: 15%;
+    margin-top: 30%;
+    margin: 15px;
 }
