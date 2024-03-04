@@ -1,18 +1,11 @@
 :root{
     --cor_botao_clicado:rgb(99, 255, 99);
     --cor_botao_n_clic:rgb(81, 81, 252);
-    --cor_fundo:rgb(253, 183, 255);
+    --cor_fundo:rgb(218, 191, 219);
     --cor_titulo:rgb(179, 0, 140);
 }
 body{
-    display: grid;/*grid*/
     background-color:var(--cor_fundo);
-    grid-template-areas: 
-    "cab"
-    "pri"
-    "rod";
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
 }
 h1{
     color:var(--cor_titulo);
@@ -20,32 +13,35 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .principal{
-    border:solid rgb(175, 0, 161) 6px;
+    display: flex;
     text-align:center;
-    height:300px;
-    width:300px;
-    border-radius:8%;
+    border-radius:00%;
+    margin-left: 20%;
 }
 button{
     border-bottom: solid white 3px;
-    border-radius: 10%;
     color: rgb(0, 0, 0);
     height: 10%;
     width: 30%;
 }
 @media only screen and (max-width: 820px) {/*para deixar responsivo*/
-    body{
-        grid-template-areas: 
-        "cab"
-        "pri"
-        "rod";
-        grid-template-columns: 1fr;/*indica tamanho das colunas*/
-        grid-template-rows:200px;/*indica tamanho das linhas*/
-    }
+   .principal{
+        
+   }
+}
+.botao{
+    height: 60px;
+    width: 200px;
+}
+.botao:first-child{
+    border-radius: 30% 0 0 0;
+}
+.botao:last-child{
+    border-radius: 0 30% 0 0;
 }
 main{
-    text-align: center;
-    margin-left: 42%;
+    text-align: left;
+    margin-left: 10%;
 }
 header{
     grid-area: cab;
@@ -54,25 +50,4 @@ header{
 footer{
     grid-area: rod;
     text-align: center;
-}
-.um{
-    color: var(--cor_botao_n_clicado);
-    color: var(--cor_botao_n_clicado);
-    border-radius: 15%;
-    margin-top: 30%;
-    margin: 15px;
-}
-.dois{
-    color: var(--cor_botao_n_clicado);
-    color: var(--cor_botao_n_clicado);
-    border-radius: 15%;
-    margin-top: 30%;
-    margin: 15px;
-}
-.tres{
-    color: var(--cor_botao_n_clicado);
-    color: var(--cor_botao_n_clicado);
-    border-radius: 15%;
-    margin-top: 30%;
-    margin: 15px;
 }
