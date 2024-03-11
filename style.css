@@ -3,6 +3,7 @@
     --cor_botao_n_clic:rgb(81, 81, 252);
     --cor_fundo:rgb(218, 191, 219);
     --cor_titulo:rgb(179, 0, 140);
+    --cor_botao_fundo: rgb(255, 255, 255);
 }
 body{
     background-color:var(--cor_fundo);
@@ -16,7 +17,8 @@ h1{
     display: flex;
     text-align:center;
     border-radius:00%;
-    margin-left: 20%;
+    margin-left: 27%;
+    flex-direction: row;
 }
 button{
     border-bottom: solid white 3px;
@@ -32,6 +34,15 @@ button{
 .botao{
     height: 60px;
     width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    border-bottom: 4px solid var(--cor_botao_fundo);
+    border-left: 4px solid var(--cor_botao_fundo);
+    border-right: 4px solid var(--cor_botao_fundo);
+    border-top: none;
 }
 .botao:first-child{
     border-radius: 30% 0 0 0;
@@ -50,4 +61,8 @@ header{
 footer{
     grid-area: rod;
     text-align: center;
+}
+.acionado{
+    background-color: var(--cor_botao_clicado);
+    border-bottom: 4px solid white;
 }
